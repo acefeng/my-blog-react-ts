@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        {% block project_meta %}{% endblock %}
+        {% block project_style %}{% endblock %}
+        <script>
+            var _global = {{ global | safe }};
+        </script>
+        {% block project_global %}{% endblock %}
+    </head>
+    <body>
+        {% block content %}
+            <div id="app"></div>
+        {% endblock %}
+    </body>
+    {% block project_script %}{% endblock %}
+</html>

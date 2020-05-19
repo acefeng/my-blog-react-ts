@@ -1,0 +1,9 @@
+{% extends '../common/layout.html' %}
+
+{% block project_style %}
+    {{ loadCss("/test.css") | safe }}
+{% endblock %}
+
+{% block project_script %}
+    {{ loadJs("/test.js") | safe }}
+{% endblock %}
